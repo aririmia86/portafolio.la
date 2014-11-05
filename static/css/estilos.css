@@ -1,0 +1,152 @@
+.u-title{
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF;
+	font-weight: 400; 
+	text-align: center;
+	padding-bottom: .5em;
+}
+
+.MainMenu{
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em;
+	/* Al poner position perdemos el modelo de caja */
+	position: fixed;
+	/* Con left y right a 0 conseguimos que ocupe todo el ancho  */
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.MainMenu-list{
+	margin: 0;
+	padding: 0;
+}
+
+.MainMenu-item{
+	display: inline-block;
+}
+
+.MainMenu-link{
+	color: #00DBFF;
+	text-decoration: none;
+	line-height: 3.75em;
+	margin-right: 1.5em;
+}
+
+.Header{
+	margin-top: 3.75em;
+	background-image: url('../images/portada.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 1.2em 0;
+}
+
+.Header-imageContainer{
+	margin: 0;
+}
+
+.Header-image{
+	border: 5px solid white;
+	/* Si es una imagen cuadrada con el valor 50% se pone redonda*/
+	border-radius: 50%;
+}
+
+/* Separando por comas damos estilos comunes a mas de un elemento */
+.Header-name, .Header-link{
+	color: white;
+}
+
+.Header-link{
+	font-size: 2.2em;
+	/* Toma el tamanyo de fuente 700: podemos poner bold o font-weight: 700; */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.Header-name{
+	font-size: 1.5em;
+	/* No existe el comodin light, hay que poner el peso a mano */
+	font-weight: 300;
+	margin: 0;
+}
+
+.Profile{
+	text-align: center;
+}
+
+.Profile-link{
+	background: orange;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
+}
+
+.Work{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.Work-item{
+	/* Si el disenyo es centrado y son cajas, hay que darle display: inline-block; y al padre text-align: center; */
+	display: inline-block;
+	margin-right: 1.8em;
+	margin-bottom: 1.8em;
+}
+
+.Work-imageContainer{
+	margin: 0;
+}
+
+.Work-description{
+	font-size: 1.1em;
+	color: #515151;
+	font-style: italic;
+}
+
+.Footer{
+	background-image: url('../images/footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em 0;
+	text-align: center;
+}
+
+.Footer-left{
+	display: inline-block;
+	width: 32em;
+	text-align: center;
+	vertical-align: top;
+}
+
+.Footer-title{
+	color: white;
+}
+
+.Footer-form{
+	text-align: center;
+	display: inline-block;
+}
+
+.Footer-formInput, .Footer-textArea{
+	background: white;
+	border: none;
+	display: block;
+	border-radius: 2em;
+	padding: .5em;
+	/* Los elementos con display block se centran con margin: 0 auto; */
+	margin: 0 auto 1em;
+}
+
+.Footer-button{
+	background: orange;
+	color: white;
+	border-radius: 1em;
+	padding: .5em;
+	border: none;
+}
